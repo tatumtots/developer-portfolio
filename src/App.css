@@ -1,38 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap");
+
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#pictureHolder {
+  background-image: url(/src/Images/tatum-on-mural.jpg);
+  min-height: 70vh;
+}
+#tatumBray {
+  font-family: "Unica One", cursive;
+  font-size: 7rem;
+  color: #82ffd9;
+  justify-content: flex-end;
+}
+#navbarContainer {
+  align-items: flex-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#aboutSect {
+  background-color: #201e1d;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+#bio {
+  color: #aaaaaa;
+}
+#headers {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 5em;
+  color: #82ffd9;
+  padding: 0.5em;
+}
+#skillsSect {
+  background-color: #82ffd9;
+  min-height: 30vh;
+}
+#projectsSect {
+  background-color: #ff8289;
+  min-height: 70vh;
+}
+#contactSect {
+  background-color: #c8ff82;
+  min-height: 70vh;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
