@@ -1,22 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap");
+/* 
+@media (max-width: 768px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 1200px) {
+}
+@media (min-width: 1200px) {
+} */
 
 .App {
-  text-align: center;
   background-color: #282c34;
 }
 
 #pictureHolder {
   background-image: url(/src/Images/tatum-on-mural.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
   min-height: 70vh;
 }
+
 #tatumBray {
+  min-height: 10vh;
+
+  border: 2px solid green;
   font-family: "Unica One", cursive;
-  font-size: 7rem;
+  font-size: 5em;
   color: #82ffd9;
+}
+
+#webDeveloper {
+  font-size: 3rem;
+  font-family: "Advent Pro", sans-serif;
+  color: "201e1d";
   justify-content: flex-end;
 }
+
 #navbarContainer {
   align-items: flex-end;
 }
@@ -30,15 +53,24 @@
 #bio {
   color: #aaaaaa;
 }
-#headers {
+.headers {
   font-family: "Advent Pro", sans-serif;
   font-size: 5em;
-  color: #82ffd9;
-  padding: 0.5em;
+  color: black;
 }
 #skillsSect {
   background-color: #82ffd9;
   min-height: 30vh;
+  padding: 5rem;
+}
+.iconRow {
+  justify-content: space-around;
+}
+.logo {
+  width: 8em;
+  height: 8em;
+
+  border: 5px solid black;
 }
 #projectsSect {
   background-color: #ff8289;

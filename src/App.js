@@ -1,16 +1,17 @@
 import "./App.css"
 import { Container, Row, Col } from "reactstrap"
-import logo from "./logo512.png"
 
 import PictureHeader from "./Components/PictureHeader"
+import SkillsSection from "./Components/SkillsSection"
 
 function App() {
-  console.log(logo)
   return (
-    <Container fluid={true}>
+    <Container fluid>
       <PictureHeader />
       <Row className='row' id='aboutSect'>
-        <Row id='headers'>About</Row>
+        <span className='headers' style={{ color: "#82ffd9" }}>
+          About
+        </span>
         <Row className='col-6' id='bio'>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
           labore corrupti velit nam dolor reiciendis eaque voluptates molestiae
@@ -18,9 +19,7 @@ function App() {
           voluptate esse?
         </Row>
       </Row>
-      <Row className='row' id='skillsSect'>
-        <img src={logo} alt='hi' height='200' width='200' />
-      </Row>
+      <SkillsSection />
       <Row className='row' id='projectsSect'>
         YOYOY
       </Row>
