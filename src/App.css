@@ -10,10 +10,6 @@
 @media (min-width: 1200px) {
 } */
 
-.App {
-  background-color: #282c34;
-}
-
 #pictureHolder {
   background-image: url(/src/Images/tatum-on-mural.jpg);
   background-size: cover;
@@ -27,7 +23,7 @@
 #tatumBray {
   min-height: 10vh;
 
-  border: 2px solid green;
+  /* border: 2px solid green; */
   font-family: "Unica One", cursive;
   font-size: 5em;
   color: #82ffd9;
@@ -41,16 +37,28 @@
 }
 
 #navbarContainer {
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
+#navItems {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 3em;
+  color: #201e1d;
+}
+
+/*ABOUT STYLING*/
 
 #aboutSect {
   background-color: #201e1d;
-  min-height: 50vh;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  min-height: 50vh;
 }
 #bio {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  min-height: 10vh;
   color: #aaaaaa;
 }
 .headers {
@@ -58,6 +66,9 @@
   font-size: 5em;
   color: black;
 }
+
+/*SKILLS STYLING*/
+
 #skillsSect {
   background-color: #82ffd9;
   min-height: 30vh;
@@ -70,10 +81,13 @@
   width: 8em;
   height: 8em;
 
-  border: 5px solid black;
+  /* border: 5px solid black; */
 }
+
+/*PROJECTS STYLING*/
+
 #projectsSect {
-  background-color: #ff8289;
+  background-color: #201e1d;
   min-height: 70vh;
 }
 #contactSect {

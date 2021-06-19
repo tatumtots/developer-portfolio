@@ -8,13 +8,13 @@ import css from "../Images/css-3.png"
 
 function SkillsSection() {
   return (
-    <Row className=' row' id='skillsSect'>
+    <Row className='row' id='skillsSect'>
       <span className='headers'>Skills</span>
 
       <Row className='iconRow d-flex'>
         <Col className='col'>
           <img src={react} alt='react logo' className='logo' />
-          <div>React </div>
+          <div style={{ justifySelf: "center" }}>React </div>
         </Col>
         <Col className='col'>
           <img src={reactNative} alt='react logo' className='logo' />

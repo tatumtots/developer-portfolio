@@ -2,27 +2,17 @@ import "./App.css"
 import { Container, Row, Col } from "reactstrap"
 
 import PictureHeader from "./Components/PictureHeader"
+import AboutSection from "./Components/AboutSection"
 import SkillsSection from "./Components/SkillsSection"
+import ProjectsSection from "./Components/ProjectsSection"
 
 function App() {
   return (
     <Container fluid>
       <PictureHeader />
-      <Row className='row' id='aboutSect'>
-        <span className='headers' style={{ color: "#82ffd9" }}>
-          About
-        </span>
-        <Row className='col-6' id='bio'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
-          labore corrupti velit nam dolor reiciendis eaque voluptates molestiae
-          atque voluptas molestias, nihil sunt. Sed porro amet, fugit pariatur
-          voluptate esse?
-        </Row>
-      </Row>
+      <AboutSection />
       <SkillsSection />
-      <Row className='row' id='projectsSect'>
-        YOYOY
-      </Row>
+      <ProjectsSection />
       <Row className='row' id='contactSect'>
         YOYOY
       </Row>
