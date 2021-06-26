@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap");
+/* 
+@media (max-width: 768px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 1200px) {
+}
+@media (min-width: 1200px) {
+} */
+
+#pictureHolder {
+  background-image: url(/src/Images/tatum-on-mural.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  min-height: 70vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#tatumBray {
+  min-height: 10vh;
+
+  /* border: 2px solid green; */
+  font-family: "Unica One", cursive;
+  font-size: 5em;
+  color: #82ffd9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#webDeveloper {
+  font-size: 3rem;
+  font-family: "Advent Pro", sans-serif;
+  color: "201e1d";
+  justify-content: flex-end;
+}
+
+#navbarContainer {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+#navItems {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 3em;
+  color: #201e1d;
+}
+
+/*ABOUT STYLING*/
+
+#aboutSect {
+  background-color: #201e1d;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  min-height: 50vh;
+}
+#bio {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  min-height: 10vh;
+  color: #aaaaaa;
+}
+.headers {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 5em;
+  color: black;
+}
+
+/*SKILLS STYLING*/
+
+#skillsSect {
+  background-color: #82ffd9;
+  min-height: 30vh;
+  padding: 5rem;
+}
+.iconRow {
+  justify-content: space-around;
+}
+.logo {
+  width: 8em;
+  height: 8em;
+
+  /* border: 5px solid black; */
+}
+
+/*PROJECTS STYLING*/
+
+#projectsSect {
+  background-color: #201e1d;
+  min-height: 70vh;
+}
+#contactSect {
+  background-color: #c8ff82;
+  min-height: 70vh;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
