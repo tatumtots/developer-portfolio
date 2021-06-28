@@ -1,6 +1,6 @@
 import "./App.css"
 import { Container, Row, Col } from "reactstrap"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 
 import PictureHeader from "./Components/PictureHeader"
 import AboutSection from "./Components/AboutSection"
@@ -9,13 +9,10 @@ import ProjectsSection from "./Components/ProjectsSection"
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Container fluid>
         <PictureHeader />
-        <Switch>
-          <Route path='/about' component={AboutSection}></Route>
-        </Switch>
-
+        <AboutSection />
         <SkillsSection />
         <ProjectsSection />
         <Row className='row' id='contactSect'>
@@ -34,7 +31,7 @@ function App() {
           </div>
         </Row>
       </Container>
-    </Router>
+    </BrowserRouter>
   )
 }
 
