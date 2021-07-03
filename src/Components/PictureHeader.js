@@ -2,6 +2,7 @@ import "../App.css"
 import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap"
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
 import Media from "react-media"
+import Navbar from "./Navbar"
 import AboutSection from "./AboutSection"
 
 function PictureHeader() {
@@ -31,34 +32,7 @@ function PictureHeader() {
           </Media>
         </Row>
       </Col>
-
-      <Col className=' d-flex' id='navbarContainer'>
-        <Nav vertical>
-          <NavItem id='navItems'>
-            <NavLink href='#' style={{ color: "#201e1d" }}>
-              <span style={{ color: "#82ffd9" }}>[0]</span> About
-            </NavLink>
-          </NavItem>
-
-          <NavItem id='navItems'>
-            <NavLink href='#' style={{ color: "#201e1d" }}>
-              <span style={{ color: "#82ffd9" }}>[1]</span> Skills
-            </NavLink>
-          </NavItem>
-
-          <NavItem id='navItems'>
-            <NavLink href='#' style={{ color: "#201e1d" }}>
-              <span style={{ color: "#82ffd9" }}>[2]</span> Projects
-            </NavLink>
-          </NavItem>
-
-          <NavItem id='navItems'>
-            <NavLink href='#' style={{ color: "#201e1d" }}>
-              <span style={{ color: "#82ffd9" }}>[3]</span> Contact
-            </NavLink>
-          </NavItem>
-        </Nav>
-      </Col>
+      <Navbar />
     </Row>
   )
 }
