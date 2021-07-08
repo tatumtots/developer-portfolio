@@ -1,9 +1,9 @@
 import "../App.css"
 import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap"
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom"
+
 import Media from "react-media"
-import Navbar from "./Navbar"
-import AboutSection from "./AboutSection"
+import Navbar from "./Navbar/Navbar"
+import { NavLogo } from "./Navbar/navbarComponents"
 
 function PictureHeader() {
   return (
@@ -20,7 +20,7 @@ function PictureHeader() {
             }
           </Media>
         </Row>
-        <Row className='d-flex' id='webDeveloper'>
+        <Row id='webDeveloper'>
           <Media query={{ maxWidth: 768 }}>
             {(matches) =>
               matches ? (
@@ -32,7 +32,6 @@ function PictureHeader() {
           </Media>
         </Row>
       </Col>
-      <Navbar />
     </Row>
   )
 }

@@ -12,9 +12,10 @@ function SkillsSection() {
       <span className='headers'>Skills</span>
 
       <Row className='iconRow d-flex'>
-        <Col className='col'>
+        <Col className='col' style={{ justifyContent: "center" }}>
           <img src={react} alt='react logo' className='logo' />
-          <div>React </div>
+
+          <div>React</div>
         </Col>
         <Col className='col'>
           <img src={reactNative} alt='react logo' className='logo' />

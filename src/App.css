@@ -22,7 +22,6 @@
 
 #tatumBray {
   min-height: 10vh;
-
   /* border: 2px solid green; */
   font-family: "Unica One", cursive;
   font-size: 5em;
@@ -32,8 +31,8 @@
 #webDeveloper {
   font-size: 3rem;
   font-family: "Advent Pro", sans-serif;
+  margin-left: 50px;
   color: "201e1d";
-  justify-content: flex-end;
 }
 
 #navbarContainer {
